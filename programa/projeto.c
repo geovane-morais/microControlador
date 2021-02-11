@@ -1,5 +1,5 @@
-#define   s1      RC2_bit
-#define   s2      RC1_bit
+#define   s1      RC1_bit
+#define   s2      RC2_bit
 #define   led1    RA0_bit
 #define   led2    RA1_bit
 
@@ -23,7 +23,7 @@ while (1)//loop infinito
       led1 = A;//valor aleatorio acende ou não led1
       led2 = B;//valor aleatorio acende ou não led2
 //=================== led1 aceso ======================
-      while(led1==1 && !led2==1)
+      while(led1 && !led2)
             {
             delay_ms(10);//delay para dar como reflexo
             c++;//quando chegar a D o player perde
@@ -42,7 +42,7 @@ while (1)//loop infinito
                     }
             }
 //=================== led2 aceso ======================
-      while(led2==1 && !led1==1)
+      while(led2 && !led1)
             {
             delay_ms(10);
             c++;//quando chegar a D o player perde
@@ -61,7 +61,7 @@ while (1)//loop infinito
                     }
             }
 //================ led1 e led2 aceso ===================
-       while(led1 == 1 && led2 == 1)
+       while(led1 && led2)
             {
             delay_ms(10);
             c++;//quando chegar a D o player perde
@@ -101,8 +101,7 @@ while (1)//loop infinito
             E++;
        }
 //===========FAZ VOLTAR A 2s o tempo limite==========
-       if(E==10)
-                {D=250;}
+       if(E==10)D=250;
 //====================================================
 }//fim do loop
 }//fim do programa

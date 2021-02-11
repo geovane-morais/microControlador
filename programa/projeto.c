@@ -19,9 +19,9 @@ while (1)//loop infinito
       C=0;//quando chegar a a D o player perde
       E=0;//tempo de Derrota
       A = rand();//valor aleatorio para A
-      B = rand();//valor aleatorio para A
+      B = rand();//valor aleatorio para B
       led1 = A;//valor aleatorio acende ou não led1
-      led2 = B;//valor aleatorio acende ou não led1
+      led2 = B;//valor aleatorio acende ou não led2
 //=================== led1 aceso ======================
       while(led1==1 && !led2==1)
             {

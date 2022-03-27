@@ -1,0 +1,14 @@
+IRCF2:IRCF0 - Seleção da frequência do oscilador interno.
+111 - 8Mhz
+110 - 4Mhz
+101 - 2Mhz
+100 - 1Mhz
+011 - 500Khz
+010 - 250Khz
+001 - 125Khz
+000 - 31Khz
+
+EX:   //Configura o oscilador interno para 8MHz
+ 	OSCCON.IRCF2 = 1;
+ 	OSCCON.IRCF1 = 1;
+ 	OSCCON.IRCF0 = 1;
